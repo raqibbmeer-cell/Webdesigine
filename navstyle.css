@@ -2,12 +2,12 @@
 {
     margin: 0px;
     padding: 0px;
-    display: flex;
 }
 .navbar
 {
     width: 100%;
     background: teal;
+    display: flex; 
 }
 .part1
 {
