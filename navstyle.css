@@ -22,8 +22,13 @@
     font-weight: bold;
     font-family: sans-serif;
     margin-left: 10px;
-    curser: pointer;
+    cursor: pointer;
+    transition-duration: 0.5s;
 
+}
+.part1 p:hover{
+    font-weight: bolder;
+    color: violet;
 }
 .part2{
     width: 60%;
@@ -42,6 +47,12 @@
     cursor: pointer;
     border-bottom: 2px solid greenyellow;
     padding-bottom: 2px;
+    transition-duration: 0.6s;
+}
+.part2 ul li:hover
+{
+    font-weight: bold;
+    color: violet;
 }
 .part3{
     width: 20%;
@@ -53,19 +64,24 @@
 .part3 input{
     margin: 0px;
     width: 180px;
-    height: 31px;
+    height: 30px;
     border:1px solid orange;
     border-top-left-radius: 9px;
     border-bottom-left-radius: 9px;
     padding-left: 3px; 
+    outline: none;
 }
 .part3 button{
     margin: 0px; 
-    height: 33px;
+    height: 30px;
     border: 1px solid orange;
     background: orange;
     border-bottom-right-radius: 10px;
     border-top-right-radius: 10px;
-    
-
+    cursor: pointer;
+    transition-duration: 0.7s;
+}
+.part3 button:hover{
+    font-weight: bold;
+    color: rgb(228, 0, 38);
 }
