@@ -7,5 +7,16 @@
 .main{
     width: 100%;
     height: 100vh;
-    background-image: url("allfilesinit/banner-bg.png");
+    background-image: url("banner-bg.png");
+    background-size: cover;
+    background-position: center;
+    }
+    .nav2{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text
+    g: 0 50px;    
     }

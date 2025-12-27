@@ -39,8 +39,23 @@
 .nav2 ul
 {
     display: flex;
-    justify-content: space-around;
+    justify-content: baseline;
     list-style: none;
+}
+.nav2 ul li
+{
+    cursor: pointer;
+    height: 30px;
+    margin: 5px;
+    width: 100px;
+    justify-content: baseline;
+    text-align: center;
+
+}
+.nav2 ul li:hover
+{
+    background: red;
+    transition: 0.5s;
 }
 .nav3
 {
@@ -49,4 +64,23 @@
     font-family: arial black;
     font-weight: bolder;
     font-size: 20px;
+    display: flex;
+
+}
+.nav3 ul
+{
+    display: flex;
+    list-style: none;
+}
+.nav3 ul img
+{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+.nav3 img
+{
+    width: 30px;
+    height: 30px;
+    margin-left: 15px;
 }
