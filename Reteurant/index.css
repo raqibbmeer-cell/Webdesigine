@@ -27,6 +27,14 @@
     font-family: arial black;
     font-weight: bolder;
     font-size: 35px;
+    curser: pointer;
+}
+.nav1.hover
+{
+    color: rgb(24, 129, 148);
+    transition: 0.8s;
+   
+    
 }
 .nav2
 {
@@ -55,7 +63,7 @@
 .nav2 ul li:hover
 {
     background: red;
-    transition: 0.5s;
+    transition: 0.8s;
 }
 .nav3
 {
