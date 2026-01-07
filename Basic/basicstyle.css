@@ -19,7 +19,8 @@
 }
 .main
 {
-    background-image: linear-gradient(to right, rgb(0, 255, 242), yellow);;
+    /* background-image: linear-gradient(to right, rgb(0, 255, 242), yellow, red); */
+    background-image: linear-gradient(to right, rgba(0, 255, 242, 1), rgb(255, 72, 0, 0.7));
     /* background-image: url(banner-bg.png); */
     background-size: cover;
     background-position: center;
@@ -74,4 +75,9 @@ span
     width: 200px;
     height: 200px;
     opacity: 0.2;
+}
+.main i
+{
+    color: black;
+    background: black;
 }
