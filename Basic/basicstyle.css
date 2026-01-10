@@ -114,13 +114,13 @@ img
 /* scroll on Hover */
 .scroll
 {
-    /* position: absolute; */
+    position: relative;
     color: black;
 }
 .option
 {
     display: none;
-    position: relative;
+    position: absolute;
     background-color: #f9f9f9;
     color: black;
     min-width: 130px;
@@ -142,4 +142,32 @@ h2
     margin: 20px;
     background: rgba(236, 233, 11, 0.959);
     box-shadow: 5px 5px 10px rgb(162, 163, 162);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.square:hover
+{
+    /* transform: translate(10px,10px); */
+    rotate: 30deg;
+    /* transform: scale(0.5,0.5);*/
+    /*transform: scale(-1,-1); */
+    /* transform: skewX(-20deg); */
+    /* transform: rotateX(150deg); */
+    transition: 2s;
+    background: teal;
+    border-radius: 50%;
+
+}
+.circle
+{
+    width: 100px;
+    height: 100px;
+    background: rgba(236, 233, 11, 0.959);
+    border-radius: 50%;
+}
+.circle:hover
+{
+    background: red;
+    transition: 2s;
 }
