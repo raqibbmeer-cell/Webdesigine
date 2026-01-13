@@ -171,3 +171,16 @@ h2
     background: red;
     transition: 2s;
 }
+.animated
+{
+    width: 200px;
+    height: 200px;
+    background: orange;
+    animation-name: abc;
+    animation-duration: 5s;
+}
+
+@keyframes abc {
+  from {background-color: orange;}
+  to {background-color: red;}
+}
