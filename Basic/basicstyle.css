@@ -114,13 +114,13 @@ img
 /* scroll on Hover */
 .scroll
 {
-    position: relative;
+
     color: black;
 }
 .option
 {
     display: none;
-    position: absolute;
+    position: relative;
     background-color: #f9f9f9;
     color: black;
     min-width: 130px;
@@ -128,17 +128,19 @@ img
     padding: 12px 16px;
 }
 .scroll:hover .option
-{
+{    
+    position: relative;
     display: block;
 }
 .scrollf{
-    position: relative;
+
     color: gray;
+    cursor: pointer;
 }
 .list{
 display: none;
-position: absolute;
-background-color: yellow;
+position: relative;
+background-color: rgb(201, 201, 181);
 min-width: 140px;
 color: red;
 box-shadow: 0px 4px 8px 0px;
@@ -147,6 +149,7 @@ padding: 16px 20px;
 }
 .scrollf:hover.list{
     display: block;
+    position: relative;
 }
 
 h2
