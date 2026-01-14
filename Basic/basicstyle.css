@@ -131,6 +131,24 @@ img
 {
     display: block;
 }
+.scrollf{
+    position: relative;
+    color: gray;
+}
+.list{
+display: none;
+position: absolute;
+background-color: yellow;
+min-width: 140px;
+color: red;
+box-shadow: 0px 4px 8px 0px;
+padding: 16px 20px;
+
+}
+.scrollf:hover.list{
+    display: block;
+}
+
 h2
 {
   text-shadow: 0 0 14px #ff0000, 0 0 5px #0000ff;
@@ -168,19 +186,53 @@ h2
 }
 .circle:hover
 {
-    background: red;
+    background:red;
     transition: 2s;
 }
 .animated
 {
     width: 200px;
     height: 200px;
-    background: orange;
+    border-radius: 50%;
+    background-image: linear-gradient(to right, yellow, red);
+    display: flex;
+    justify-content: center;
+    align-items: center;
     animation-name: abc;
     animation-duration: 5s;
 }
 
 @keyframes abc {
-  from {background-color: orange;}
-  to {background-color: red;}
+  from 
+    {
+        
+    }
+  to 
+    {
+       rotate: 360deg; 
+    }
+  
+}
+.circle1
+{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-image: linear-gradient(to right, red, yellow);
+    animation-name: abc;
+    animation-duration: 5s;
+    rotate: 30deg;
+    animation-name: abc2;
+    animation-duration: 2s;
+}
+@keyframes abc2 {
+  from 
+    {
+        
+    }
+  to 
+    {
+       rotate: 360deg; 
+    }
+  
 }
