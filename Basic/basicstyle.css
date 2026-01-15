@@ -134,18 +134,17 @@ img
 }
 .scrollf{
 
-    color: gray;
+    color: green;
     cursor: pointer;
 }
 .list{
 display: none;
-position: relative;
-background-color: rgb(201, 201, 181);
-min-width: 140px;
-color: red;
-box-shadow: 0px 4px 8px 0px;
-padding: 16px 20px;
-
+    position: relative;
+    background-color: #f9f9f9;
+    color: black;
+    min-width: 130px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
 }
 .scrollf:hover.list{
     display: block;
@@ -238,4 +237,37 @@ h2
        rotate: 360deg; 
     }
   
+}
+.circle2{
+width: 200px;
+height: 200px;
+background:rgb;
+background-radius:50px;
+
+
+}
+.circle:hover
+{
+    background: green;
+    transition: 3s;
+}
+.animated2
+{
+    width:300px;
+    height:200px;
+    background-image: linear-gradient(red green blue);
+    animation-name: azz;
+    rotate: 40deg;
+    animation-duration: 2s;
+}
+@keyframes azz
+{
+    from{rotate 30deg}
+    to{rotate 50deg}
+}
+.box2
+{
+    width: 200px;
+    height: 200px;
+    background: red;
 }
