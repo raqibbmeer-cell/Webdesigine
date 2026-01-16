@@ -244,30 +244,48 @@ height: 200px;
 background:rgb;
 background-radius:50px;
 
-
 }
 .circle:hover
 {
     background: green;
     transition: 3s;
 }
-.animated2
-{
-    width:300px;
-    height:200px;
-    background-image: linear-gradient(red green blue);
-    animation-name: azz;
-    rotate: 40deg;
-    animation-duration: 2s;
-}
-@keyframes azz
-{
-    from{rotate 30deg}
-    to{rotate 50deg}
-}
 .box2
 {
     width: 200px;
     height: 200px;
     background: red;
+
+}
+@keyframes {
+    0%{
+        background-color:red;
+        left:0px; top:0px;  
+        border-radius:50px;  
+    }   
+0%{
+    background-color:teal;
+    
+25%{
+    background-color:yellow;
+    left: 200px; top:0px;
+    border-radius: 14px; 
+}
+50%{
+    background-color:green;
+    left:200px; top:200px;
+    border-radius:28px;  
+    } 
+      
+75%{
+    background-color:blue;
+    left:0px; top:200px;
+    border-radius: 42px;  
+    }
+100%{zz  u
+    background-color:red;
+    left:0px; top:0px;  
+    border-radius:50px;  
+    }   
+     
 }
