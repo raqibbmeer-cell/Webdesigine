@@ -1,0 +1,36 @@
+.load
+{
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.load img
+{
+    width: 200px;
+    height: 200px;
+    /* animation: load 5s linear alternate; */
+    animation-name: load;
+    animation-duration: 2s;
+    animation-iteration-count:calc(4);
+    position: absolute;
+    
+}   
+img#img2{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    rotate: 90deg;
+    animation-duration: 4s;
+}
+@keyframes load
+{
+    0%{
+        transform: rotate(0deg);
+    }               
+    100%{
+        transform: rotate(360deg);
+        display: none;
+    }
+}
