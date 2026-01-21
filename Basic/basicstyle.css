@@ -289,3 +289,16 @@ background-radius:50px;
     }   
      
 }
+.loading1
+{
+    width: 300px;
+    height: 300px;
+
+}
+.loading1 img
+{
+    width: 200px;
+    animation-name: load;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
