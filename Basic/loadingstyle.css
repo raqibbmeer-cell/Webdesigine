@@ -34,3 +34,37 @@ img#img2{
         display: none;
     }
 }
+
+.aero
+{
+    width: 90%;
+    height: 200px;
+    position: relative;
+    top: 220px;
+}
+.aero img
+{
+    width: 100px;
+    height: 100px;
+    position: relative;
+    animation-name: aerofun;
+    animation-duration: 10s;
+    animation: aerofun 10s linear infinite;
+
+}
+
+@keyframes aerofun  
+{
+    0%{
+        left: 0%;
+        transform: rotateX(0deg);
+    }
+    10%{
+        left: 10%;
+        transform: rotateX(45deg);
+    }
+    30%{
+        left: 100%;
+        transform: rotateX(360deg);
+    }
+}
