@@ -22,7 +22,7 @@ img#img2{
     height: 200px;
     position: absolute;
     rotate: 90deg;
-    animation-duration: 4s;
+    animation-duration: 5s;
 }
 @keyframes load
 {
@@ -48,7 +48,7 @@ img#img2{
     height: 100px;
     position: relative;
     animation-name: aerofun;
-    animation-duration: 10s;
+    animation-duration: 20s;
     animation: aerofun 10s linear infinite;
 
 }
@@ -59,12 +59,34 @@ img#img2{
         left: 0%;
         transform: rotateX(0deg);
     }
-    10%{
-        left: 10%;
-        transform: rotateX(45deg);
-    }
+    
     30%{
         left: 100%;
-        transform: rotateX(360deg);
+        transform: rotateX(3600000deg);
     }
 }
+.scroll
+{
+color: red;
+}
+.option
+{
+    width: 100%;
+    color: chartreuse;
+    position: relative;
+    height: 50px;
+    border: 1px solid red;
+    background-color: rgb(38, 38, 85);
+    box-shadow: 0px 0px 10px black;
+    display: none;
+    min-width: 150px;
+    transition: duration 0.5s;
+    
+}
+.scroll:hover .option
+{
+    display: block;
+    background-color: saddlebrown;
+    border-radius: 8px;
+    position: relative;
+}   
