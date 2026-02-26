@@ -207,7 +207,7 @@ h2
 @keyframes abc {
   from 
     {
-        
+      
     }
   to 
     {
@@ -282,7 +282,7 @@ background-radius:50px;
     left:0px; top:200px;
     border-radius: 42px;  
     }
-100%{zz  u
+100%{
     background-color:red;
     left:0px; top:0px;  
     border-radius:50px;  
@@ -295,6 +295,8 @@ background-radius:50px;
     height: 200px;
     display: flex;
     justify-content: center;
+
+    animation-duration: 1s;
     align-items: center;
 }
 @keyframes load {
