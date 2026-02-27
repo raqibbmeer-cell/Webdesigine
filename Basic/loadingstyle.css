@@ -21,8 +21,10 @@ img#img2{
     width: 200px;
     height: 200px;
     position: absolute;
+    animation-name: load;
     rotate: 90deg;
     animation-duration: 5s;
+    animation: 3s linear infinite;
 }
 @keyframes load
 {
@@ -32,6 +34,7 @@ img#img2{
     100%{
         transform: rotate(360deg);
         display: none;
+    
     }
 }
 
@@ -49,8 +52,8 @@ img#img2{
     position: relative;
     animation-name: aerofun;
     animation-duration: 20s;
-    animation: aerofun 10s linear infinite;
-
+    animation-iteration-count: infinite;
+    
 }
 
 @keyframes aerofun  
@@ -62,7 +65,7 @@ img#img2{
     
     30%{
         left: 100%;
-        transform: rotateX(3600000deg);
+        transform: rotateX(360deg);
     }
 }
 .scroll

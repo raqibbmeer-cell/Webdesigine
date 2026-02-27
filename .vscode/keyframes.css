@@ -3,7 +3,7 @@
     height: 150px;
     background-color: teal;
     animation-name: moving;
-    animation: moving 2s linear infinite;
+    animation: 2s linear infinite;
     position: absolute;
 
 }
