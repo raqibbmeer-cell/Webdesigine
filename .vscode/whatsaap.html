@@ -11,6 +11,9 @@
   align-items: center;
   height: 100vh;
   background: #0f172a;
+  
+  
+
 }
 
 .loader {
@@ -18,22 +21,36 @@
   height: 80px;
   border-radius: 50%;
   border: 6px solid #334155;
-  border-top: 6px solid #09b617;
+  border-top: 6px solid #f50caf;
   animation: spin 1s linear infinite;
-  box-shadow: 0 0 20px rgba(155, 10, 94, 0.6);
+  box-shadow: 0 0 30px rgba(0, 174, 255, 0.6);
+  
 }
 
 @keyframes spin {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
 }
+#logo img{
+    width: 79px;
+    height: 79px;
+    border-radius: 50%;  
+    display: flex;
+    position: relative;
+    right: 85px;
+    bottom: 1px;
+    background-color: rgb(0, 255, 255);
+}
     </style>
 
 </head>
 <body>
     <div class="loader">
-        <p></p>
+        
     </div>
+    <div id="logo">
+            <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp Logo">
+        </div>
     
 </body>
 </html>
