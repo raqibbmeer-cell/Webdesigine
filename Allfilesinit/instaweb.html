@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Themeerraqibb</title>
+
+<style>
+
+body{
+margin:0;
+font-family:Arial;
+background:black;
+color:white;
+text-align:center;
+overflow-x:hidden;
+}
+
+/* animated background */
+
+body::before{
+content:"";
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:radial-gradient(circle,#0ea5e9,black);
+opacity:0.2;
+animation:move 10s infinite alternate;
+z-index:-1;
+}
+
+@keyframes move{
+from{transform:scale(1)}
+to{transform:scale(1.3)}
+}
+
+/* header */
+
+.header{
+font-size:40px;
+padding:30px;
+color:#38bdf8;
+text-shadow:0 0 20px #38bdf8;
+}
+
+/* profile */
+
+.profile img{
+width:220px;
+border-radius:50%;
+border:4px solid #38bdf8;
+box-shadow:0 0 30px #38bdf8;
+}
+
+/* stats */
+
+.stats{
+display:flex;
+justify-content:center;
+gap:60px;
+margin-top:25px;
+font-size:22px;
+}
+
+/* bio */
+
+.bio{
+margin-top:20px;
+font-size:18px;
+}
+
+/* button */
+
+button{
+margin-top:20px;
+padding:15px 35px;
+background:#38bdf8;
+border:none;
+border-radius:12px;
+color:white;
+font-size:18px;
+cursor:pointer;
+box-shadow:0 0 25px #38bdf8;
+}
+
+button:hover{
+box-shadow:0 0 45px #38bdf8;
+}
+
+/* about */
+
+#about{
+display:none;
+margin-top:50px;
+max-width:700px;
+margin-left:auto;
+margin-right:auto;
+}
+
+/* reels */
+
+.reels{
+margin-top:60px;
+}
+
+iframe{
+border-radius:15px;
+box-shadow:0 0 20px #38bdf8;
+margin:10px;
+}
+
+/* footer */
+
+footer{
+margin-top:60px;
+padding:20px;
+color:#aaa;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="header">Themeerraqibb</div>
+
+<div class="profile">
+
+<img src="profile.jpg">
+
+<div class="stats">
+
+<div>
+<b id="posts">0</b><br>Posts
+</div>
+
+<div>
+<b id="followers">0</b><br>Followers
+</div>
+
+<div>
+<b id="following">0</b><br>Following
+</div>
+
+</div>
+
+<div class="bio">
+
+<h2>Meer Raqibb</h2>
+
+<p>Turning moments into feelings 🎬</p>
+
+<button onclick="showAbout()">About Me</button>
+
+<br>
+
+<a href="https://instagram.com/meer_raqibb" target="_blank">
+<button>Follow on Instagram</button>
+</a>
+
+</div>
+
+</div>
+
+<div id="about">
+
+<h2>About Themeerraqibb</h2>
+
+<p>
+Themeerraqibb ek Instagram content creator hai jo cinematic reels
+aur emotional edits banata hai.
+</p>
+
+<p>
+Unka content nature vibes aur deep feelings par based hota hai.
+</p>
+
+<p>
+Role: Reel Creator 🎬 <br>
+Editor: PC Editor 💻
+</p>
+
+</div>
+
+<div class="reels">
+
+<h2>My Reels</h2>
+
+<!-- REELS EMBED -->
+
+<iframe src="https://www.instagram.com/reel/DVBdIc_EsZS/embed"
+width="300" height="400"></iframe>
+
+<iframe src="https://www.instagram.com/reel/DVBdIc_EsZS/embed"
+width="300" height="400"></iframe>
+
+<iframe src="https://www.instagram.com/reel/DVBdIc_EsZS/embed"
+width="300" height="400"></iframe>
+
+</div>
+
+<footer>
+© 2026 Themeerraqibb
+</footer>
+
+<script>
+
+/* about button */
+
+function showAbout(){
+document.getElementById("about").style.display="block";
+}
+
+/* animated counters */
+
+function counter(id,start,end,speed){
+let obj=document.getElementById(id)
+let current=start
+
+let timer=setInterval(function(){
+
+current++
+
+obj.innerHTML=current
+
+if(current>=end){
+clearInterval(timer)
+}
+
+},speed)
+}
+
+counter("posts",0,58,30)
+counter("followers",0,6149,1)
+counter("following",0,719,10)
+
+</script>
+
+</body>
+</html>
